@@ -1,0 +1,25 @@
+{
+  "name": "frontend-turborepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build --no-daemon",
+    "dev": "turbo run dev --no-daemon",
+    "lint": "turbo run lint --no-daemon",
+    "lint:fix": "turbo run lint:fix --no-daemon",
+    "format": "turbo run format --no-daemon",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "latest",
+    "turbo": "latest",
+    "eslint-config-custom": "workspace:*",
+    "prettier-config-custom": "workspace:*",
+    "shared": "workspace:*"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "^pnpm@8.0.0"
+}
